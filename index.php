@@ -111,6 +111,6 @@
     <form class="d-flex align-items-center text-center justify-content-center" method="GET" action="<?php echo $_SERVER['PHP_SELF'] ?>">
         <button name="parking" value="true" type="submit" class="btn btn-warning text-white mt-5 text-uppercase">hotel con parcheggio</button>
     </form>
-    <p class="text-end text-uppercase text-white m-2 mt-3">Classe#92 with Love.  </p>
+    <p class="text-end text-uppercase text-white m-2 mt-3">Classe#92 with Love.</p>
     </div>
 </body>
