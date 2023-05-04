@@ -51,11 +51,11 @@
             Situato a 2,5 km dal centro storico di Milano, il Central Station Hotel si trova a 4 fermate di metropolitana dal Duomo e dal Palazzo Reale.',
             'parking' => true,
             'vote' => 2,
-            'distance_to_center' => 50
+            'distance_to_center' => 50 
         ],
 
     ];
-    $filterHotel = [];
+    //$filterHotels = [];
 
     if (!empty($_GET['parking'])) {
         foreach ($hotels as $hotel) {
@@ -76,13 +76,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Trivago</title>
+    <title>Booleavago</title>
 </head>
 
 <body>
     <div class="container bg-primary text-white wh-100">
-    <h1 class="text-center text-uppercase text-white">trivago</h1>
-    <h4 class="text-center text-uppercase text-white">scegli la tua prossima meta </h4>
+    <h1 class="text-center text-uppercase text-white m-2 mt-3">Booleavago</h1>
+    <h4 class="text-center text-uppercase text-white m-2 mt-3">scegli la tua prossima meta </h4>
+    <h6 class="text-center text-uppercase text-white m-2 mt-3"> affidati a noi&troverai le migliori offerte a prezzi mai visti</h6>
         <table class="table text-white w-100">
             <thead>
                 <tr>
@@ -108,7 +109,8 @@
             </tbody>
         </table>
     <form class="d-flex align-items-center text-center justify-content-center" method="GET" action="<?php echo $_SERVER['PHP_SELF'] ?>">
-        <button name="parking" value="yes" type="submit" class="btn btn-warning text-white mt-5 text-uppercase">mostra solo con hotel con parcheggio</button>
+        <button name="parking" value="true" type="submit" class="btn btn-warning text-white mt-5 text-uppercase">hotel con parcheggio</button>
     </form>
+    <p class="text-end text-uppercase text-white m-2 mt-3">Classe#92 with < 3 </p>
     </div>
 </body>
