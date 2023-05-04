@@ -4,24 +4,28 @@
 
         [
             'name' => 'Hotel Belvedere',
-            'img' => 'https://www.italiaconvention.it/wp-content/uploads/2016/11/AC-MILANO_ingresso_628x474.jpg',
-            'description' => 'Hotel Belvedere Descrizione',
+            'img' => './img/belvedere.png',
+            'description' => 'Hotel Belvedere: Situato tra Castelnuovo e Peschiera del Garda, il Belvedere Village offre 182 appartamenti immersi in un parco con 3 piscine a laguna e un parcheggio gratuito.
+            Tutte le unità abitative del Belvedere Village presentano interni climatizzati e una terrazza o un balcone con tavolo e sedie. A vostra disposizione anche un ristorante.
+            Il Belvedere Village dista 500 metri da una fermata dell autobus, 1,5 km da Castelnuovo Del Garda e 10 minuti di auto dal parco divertimenti Gardaland.',
             'parking' => true,
             'vote' => 4,
             'distance_to_center' => 10.4
         ],
         [
             'name' => 'Hotel Futuro',
-            'img' => 'https://www.milanocittastato.it/wp-content/uploads/2017/03/Grand-hotel.jpg',
-            'description' => 'Hotel Futuro Descrizione',
+            'img' => './img/futuro.png',
+            'description' => 'Hotel Futuro: Con centro spa e benessere, più una terrazza, il Futurotel Malagueta Beach si trova nel centro di Malaga, a 1 minuto dalla spiaggia. A breve distanza figurano attrazioni come il Museo Picasso, la Cattedrale di Malaga e il Museo del vetro e del cristallo. Sono disponibili una reception attiva 24 ore su 24 e il servizio in camera.
+            ',
             'parking' => true,
             'vote' => 2,
             'distance_to_center' => 2
         ],
         [
             'name' => 'Hotel Rivamare',
-            'img' => 'https://www.milanocittastato.it/wp-content/uploads/2017/03/Grand-hotel.jpg',
-            'description' => 'Hotel Rivamare Descrizione',
+            'img' => './img/rivamare.png',
+            'description' => 'Hotel Rivamare: Situato ad Agropoli, a 2,3 km dalla spiaggia di Lido Azzurro, il Rivamare - Agropoli offre una piscina stagionale all aperto, un parcheggio privato gratuito, un giardino e una terrazza. Dotata di un bar, la struttura si trova a 2,3 km dal Lungo Mare San Marco. Potrete, inoltre, usufruire del WiFi gratuito e del servizio concierge.
+            Le sistemazioni dell’affittacamere includono un armadio. Le camere del RivaMare - Agropoli sono dotate di bagno privato con bidet e set di cortesia, TV a schermo piatto e aria condizionata, e alcune offrono un balcone. Lenzuola e asciugamani sono inclusi.',
             'parking' => false,
             'vote' => 1,
             'distance_to_center' => 1
