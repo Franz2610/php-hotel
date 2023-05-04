@@ -55,8 +55,18 @@
         ],
 
     ];
+    $filterHotel = [];
 
-$filterHotels = $hotels;
+    if (!empty($_GET['parking'])) {
+        foreach ($hotels as $hotel) {
+            if ($hotel['parking']) {
+                $filterHotels[] = $hotel;
+            }
+        }
+    }
+    else {
+        $filterHotels = $hotels;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,8 +80,9 @@ $filterHotels = $hotels;
 </head>
 
 <body>
-    <h1 class="text-center text-uppercase text-primary">trivago</h1>
     <div class="container bg-primary text-white wh-100">
+    <h1 class="text-center text-uppercase text-white">trivago</h1>
+    <h4 class="text-center text-uppercase text-white">scegli la tua prossima meta </h4>
         <table class="table text-white w-100">
             <thead>
                 <tr>
@@ -87,7 +98,7 @@ $filterHotels = $hotels;
                 <?php foreach ($filterHotels as $hotel) { ?>
                     <tr>
                         <td><?php echo $hotel["name"]?></td>
-                        <td><?php echo $hotel["img"]?></td>
+                        <td><img class="w-75" src="<?php echo $hotel["img"]?>" /></td>
                         <td><?php echo $hotel["description"] ?></td>
                         <td><?php echo ($hotel["parking"] ? 'Siamo abilitati al parcheggio' : 'Non siamo abilitati al parcheggio') ?></td>
                         <td><?php echo $hotel["vote"] ?> <img class="w-25" src="./img/nl.png" alt="star"></td>
@@ -96,5 +107,8 @@ $filterHotels = $hotels;
                 <?php } ?>
             </tbody>
         </table>
+    <form class="d-flex align-items-center text-center justify-content-center" method="GET" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+        <button name="parking" value="yes" type="submit" class="btn btn-warning text-white mt-5 text-uppercase">mostra solo con hotel con parcheggio</button>
+    </form>
     </div>
 </body>
