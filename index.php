@@ -82,7 +82,7 @@
 <body>
     <div class="container bg-primary text-white wh-100">
     <h1 class="text-center text-uppercase text-white m-2 mt-3">Booleavago</h1>
-    <h4 class="text-center text-uppercase text-white m-2 mt-3">scegli la tua prossima meta </h4>
+    <h4 class="text-center text-uppercase text-white m-2 mt-3">scegli la tua prossima meta</h4>
     <h6 class="text-center text-uppercase text-white m-2 mt-3"> affidati a noi&troverai le migliori offerte a prezzi mai visti</h6>
         <table class="table text-white w-100">
             <thead>
